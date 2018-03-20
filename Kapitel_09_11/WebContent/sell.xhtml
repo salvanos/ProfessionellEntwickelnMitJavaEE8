@@ -1,0 +1,36 @@
+<ui:composition
+    template="/template.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:define name="content">
+        <h:form
+            id="sellForm"
+            prependId="false"
+            enctype="multipart/form-data">
+            <h:message
+                for="sellForm"
+                showSummary="true" />
+            <h:panelGrid columns="2">
+                <f:facet name="header">
+                    <h:outputText value="#{msg['sell']}" />
+                </f:facet>
+                <h:outputLabel value="#{msg['item.title']}:" />
+                <h:inputText
+                    id="title"
+                    value="#{sellController.item.title}" />
+                <h:outputLabel value="#{msg['item.description']}:" />
+                <h:inputTextarea
+                    value="#{sellController.item.description}" />
+                <h:outputLabel value="#{msg['item.price']}:" />
+                <h:inputText value="#{sellController.item.price}" />
+                <h:outputLabel value="#{msg['item.foto']}:" />
+                <h:inputFile value="#{sellController.part}" />
+                <h:commandButton
+                    value="#{msg['sell']}"
+                    action="#{sellController.persist(signinController)}" />
+            </h:panelGrid>
+        </h:form>
+    </ui:define>
+</ui:composition>

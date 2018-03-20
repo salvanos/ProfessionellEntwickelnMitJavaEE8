@@ -1,0 +1,24 @@
+<web-app 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://xmlns.jcp.org/xml/ns/Java EE" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/Java EE 
+	http://xmlns.jcp.org/xml/ns/Java EE/web-app_4_0.xsd" 
+	version="4.0">
+
+    <servlet>
+        <servlet-name>JdbcServlet</servlet-name>
+        <servlet-class>
+            de.java2enterprise.onlineshop.JdbcServlet
+        </servlet-class>
+        <init-param>
+            <param-name>jdbc_properties</param-name>
+            <param-value>
+                /tmp/jdbc.properties
+            </param-value>
+        </init-param> 
+    </servlet> 
+  <servlet-mapping>
+    <servlet-name>JdbcServlet</servlet-name>
+    <url-pattern>/db_settings</url-pattern>
+  </servlet-mapping>
+</web-app>

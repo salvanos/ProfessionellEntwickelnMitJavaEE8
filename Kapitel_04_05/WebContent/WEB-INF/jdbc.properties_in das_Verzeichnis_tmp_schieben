@@ -1,0 +1,4 @@
+driver=oracle.jdbc.OracleDriver
+url=jdbc:oracle:thin:@//localhost:1521/XE
+username=onlineshop_user
+password=geheim_123

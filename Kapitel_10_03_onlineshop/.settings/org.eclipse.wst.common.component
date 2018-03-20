@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Kapitel_10_03_onlineshop">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="Kapitel_10_03_onlineshop-ejb.jar" deploy-path="/" handle="module:/resource/Kapitel_10_03_onlineshop-ejb/Kapitel_10_03_onlineshop-ejb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Kapitel_10_03_onlineshop-web.war" deploy-path="/" handle="module:/resource/Kapitel_10_03_onlineshop-web/Kapitel_10_03_onlineshop-web">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

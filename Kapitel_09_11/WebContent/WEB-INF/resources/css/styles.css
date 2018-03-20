@@ -1,0 +1,21 @@
+* {
+  font-family: sans-serif;
+  padding: 9px;
+  color: gray;
+}
+body > header {
+  background: url("#{resource['img:tau.jpg']}");
+  border-radius: 10px;  
+  box-shadow: 5px 5px 9px gray;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover, .title {
+  color: white;
+  text-shadow: 0 0 10px white, 0 0 20px white;
+}
+input:not([type='image']), textarea {
+  width: 200px;
+}

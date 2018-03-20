@@ -1,0 +1,39 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<fmt:setLocale value="${param.locale}" scope="session"/>
+<fmt:setBundle basename="messages"/>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="resources/css/styles.css">
+        <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
+       <title><fmt:message key="title"/></title>
+    </head>
+    <body>
+        <header>
+            <hgroup>
+            <h1 class="title"><fmt:message key="title"/></h1>
+            </hgroup>
+            <a href="index.jsp?locale=de_DE"><img src="resources/img/de.gif"/></a>
+            <a href="index.jsp?locale=en_US"><img src="resources/img/us.gif"/></a>
+        <nav>
+            <a href="index.jsp"><fmt:message key="home"/></a>
+            <c:choose>
+            <c:when test="${empty customer}">
+                <a href="register.jsp">
+                    <fmt:message key="register"/>
+                </a>
+                <a href="signin.jsp">
+                    <fmt:message key="signin"/>
+                </a>
+            </c:when>
+            <c:otherwise>
+                <a href="signout.jsp"><fmt:message key="signout"/></a>
+                <a href="sell.jsp"><fmt:message key="sell"/></a>
+            </c:otherwise>
+            </c:choose>
+            <a href="search.jsp"><fmt:message key="search"/></a>
+        </nav>
+    </header>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15163538289760" configfile="/Kapitel_09_11/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="946" id="pf15212992913010" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf152129953309711 pf152129953309712 pf152129953309713 pf152129953309714 pf152129953309715" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="search.jsf" id="pf152129953309716" referenceLink="//@navigationRule.0/@navigationCase.4/@toViewId|" inlinks="pf152129953309711" path="/search.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="sell.jsf" id="pf152129953309717" referenceLink="//@navigationRule.0/@navigationCase.3/@toViewId|" inlinks="pf152129953309712" path="/sell.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="signin.jsf" id="pf152129953309718" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf152129953309713" path="/signin.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="register.jsf" id="pf152129953309719" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf152129953309714" path="/register.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.jsf" id="pf152129953309720" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf152129953309715" path="/index.xhtml"/>
+  <links id="pf152129953309711" target="pf152129953309716" source="pf15212992913010" outcome="search" redirect="true"/>
+  <links id="pf152129953309712" target="pf152129953309717" source="pf15212992913010" outcome="sell" redirect="true"/>
+  <links id="pf152129953309713" target="pf152129953309718" source="pf15212992913010" outcome="signin" redirect="true"/>
+  <links id="pf152129953309714" target="pf152129953309719" source="pf15212992913010" outcome="register" redirect="true"/>
+  <links id="pf152129953309715" target="pf152129953309720" source="pf15212992913010" outcome="index" redirect="true"/>
+</pageflow:Pageflow>
