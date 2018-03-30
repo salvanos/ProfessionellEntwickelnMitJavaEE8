@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: de.java2enterprise.onlineshop.jsonp.WriteJsonUTF8Test
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+de.java2enterprise.onlineshop.jsonp.WriteJsonUTF8Test.testWrite()  Time elapsed: 0 sec  <<< FAILURE!
+javax.json.JsonException: Provider org.glassfish.json.JsonProviderImpl not found
+	at javax.json.spi.JsonProvider.provider(JsonProvider.java:99)
+	at javax.json.Json.createObjectBuilder(Json.java:299)
+	at de.java2enterprise.onlineshop.jsonp.WriteJsonUTF8Test.testWrite(WriteJsonUTF8Test.java:16)
+Caused by: java.lang.ClassNotFoundException: org.glassfish.json.JsonProviderImpl
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at javax.json.spi.JsonProvider.provider(JsonProvider.java:96)
+	... 20 more
+
