@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Kapitel_11_01_onlineshop-web">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="onlineshop-ejb.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Kapitel_11_04_04_onlineshop-ejb/Kapitel_11_04_04_onlineshop-ejb">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/Kapitel_11_01_onlineshop-web/build/classes"/>
+        <property name="context-root" value="onlineshop-web"/>
+    </wb-module>
+</project-modules>
