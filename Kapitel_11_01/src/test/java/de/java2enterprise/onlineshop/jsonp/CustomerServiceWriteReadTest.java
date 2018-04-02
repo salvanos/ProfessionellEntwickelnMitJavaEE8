@@ -30,10 +30,10 @@ public class CustomerServiceWriteReadTest {
 
         assertNotNull(jsonObject);
 
-        int id = jsonObject.getInt("id");
+        long id = jsonObject.getJsonNumber("id").longValue();
         assertEquals(1, id);
 
-        String name = jsonObject.getString("name");
+        String name = jsonObject.getJsonString("name").getString();
         assertEquals("Peter Schmidt", name);
 
         String strasse = jsonObject.getString("strasse");

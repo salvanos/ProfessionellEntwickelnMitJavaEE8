@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: de.java2enterprise.onlineshop.jsonp.ReadJsonUTF8WithBOMTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
-de.java2enterprise.onlineshop.jsonp.ReadJsonUTF8WithBOMTest.testRead()  Time elapsed: 0.002 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at java.io.StringReader.<init>(StringReader.java:50)
-	at de.java2enterprise.onlineshop.jsonp.ReadJsonUTF8WithBOMTest.testRead(ReadJsonUTF8WithBOMTest.java:30)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in de.java2enterprise.onlineshop.jsonp.ReadJsonUTF8WithBOMTest

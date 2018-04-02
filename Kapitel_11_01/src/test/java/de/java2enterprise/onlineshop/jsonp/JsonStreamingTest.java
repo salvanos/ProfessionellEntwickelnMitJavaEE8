@@ -8,7 +8,7 @@ import javax.json.stream.JsonGenerator;
 
 import org.junit.jupiter.api.Test;
 
-public class JsonStreaming {
+public class JsonStreamingTest {
 
     @Test
     public void test() {

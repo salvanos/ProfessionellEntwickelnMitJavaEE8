@@ -2,6 +2,7 @@ package de.java2enterprise.onlineshop.jsonp;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.logging.Logger;
 
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -11,6 +12,9 @@ import javax.json.JsonReader;
 import org.junit.jupiter.api.Test;
 
 public class CustomersServicePatchTest {
+    private final static Logger LOGGER = Logger.getLogger(
+            CustomersServicePatchTest.class.getName());
+
 
     @Test
     public void testReplaceValueWithPatch()
@@ -24,7 +28,7 @@ public class CustomersServicePatchTest {
                 .build();
 
         JsonArray newJsonArray = jsonPatch.apply(jsonArray);
-        System.out.println(newJsonArray);
+        LOGGER.info("Neues Json-Dokument: " + newJsonArray);
     }
 
 }

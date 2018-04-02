@@ -4,6 +4,7 @@ import static org.junit.Assert.assertNotNull;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.logging.Logger;
 
 import javax.json.Json;
 import javax.json.JsonReader;
@@ -12,6 +13,9 @@ import javax.json.JsonStructure;
 import org.junit.jupiter.api.Test;
 
 public class CustomersServiceTest {
+    private final static Logger LOGGER = Logger.getLogger(
+            CustomersServiceTest.class.getName());
+
     @Test
     public void testReplaceValue()
             throws FileNotFoundException {
@@ -25,6 +29,6 @@ public class CustomersServiceTest {
                         "/0/strasse",
                         "Weberstr.22");
         assertNotNull(newJsonStructure);
-        System.out.println(newJsonStructure);
+        LOGGER.info("Neues Json-Dokument: " + newJsonStructure);
     }
 }

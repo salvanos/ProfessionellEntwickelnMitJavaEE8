@@ -1,8 +1,10 @@
 C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\CustomerServiceWriteReadTest.java
 C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\CustomerServiceSimpleTest.java
-C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\ReadJsonFromGoogle.java
 C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\ReadJsonUTF8Test.java
 C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\WriteJsonUTF8Test.java
 C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\ReadJsonUTF8WithBOMTest.java
-C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\JsonStreaming.java
+C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\ReadJsonFromGoogleTest.java
+C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\CustomersServicePatchTest.java
 C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\ReadJsonGenericallyTest.java
+C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\JsonStreamingTest.java
+C:\Users\salvanoa\eclipse-workspace\Kapitel_11_01\src\test\java\de\java2enterprise\onlineshop\jsonp\CustomersServiceTest.java

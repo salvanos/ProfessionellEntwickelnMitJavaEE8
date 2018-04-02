@@ -2,6 +2,7 @@ package de.java2enterprise.onlineshop.jsonp;
 
 import java.io.InputStream;
 import java.net.URL;
+import java.util.logging.Logger;
 
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -12,7 +13,9 @@ import javax.json.JsonValue;
 
 import org.junit.jupiter.api.Test;
 
-public class ReadJsonFromGoogle {
+public class ReadJsonFromGoogleTest {
+    private final static Logger LOGGER = Logger.getLogger(
+            ReadJsonFromGoogleTest.class.getName());
     String address = "bonn+goebenstr.5";
     String googleapi = "http://maps.googleapis.com/maps/api/geocode/json?address=";
     
@@ -36,9 +39,9 @@ public class ReadJsonFromGoogle {
                     JsonObject geometry = rJsonObject.getJsonObject("geometry");
                     JsonObject location = geometry.getJsonObject("location");
                     JsonNumber lat = location.getJsonNumber("lat");
-                    System.out.println("Breitengrad: " + lat.doubleValue());
+                    LOGGER.info("Breitengrad: " + lat.doubleValue());
                     JsonNumber lng = location.getJsonNumber("lng");
-                    System.out.println("Längengrad: " + lng.doubleValue());
+                    LOGGER.info("Längengrad: " + lng.doubleValue());
                 }
             }
         }

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Map.Entry;
+import java.util.logging.Logger;
 
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -15,6 +16,8 @@ import javax.json.JsonValue;
 import org.junit.jupiter.api.Test;
 
 public class ReadJsonGenericallyTest {
+    private final static Logger LOGGER = Logger.getLogger(
+            ReadJsonGenericallyTest.class.getName());
     private String json = "";
 
     @Test
@@ -27,7 +30,7 @@ public class ReadJsonGenericallyTest {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println(json);
+        LOGGER.info("json: " + json);
     }
 
     private void navigate(String key, JsonValue value) {
