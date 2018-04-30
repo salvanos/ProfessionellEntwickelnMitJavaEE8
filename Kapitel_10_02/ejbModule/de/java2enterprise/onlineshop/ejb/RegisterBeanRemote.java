@@ -7,7 +7,7 @@ import javax.ejb.Remote;
 @Remote
 public interface RegisterBeanRemote extends Serializable {
     
-    public abstract String persist(
+    String persist(
             String email, 
             String password);
 

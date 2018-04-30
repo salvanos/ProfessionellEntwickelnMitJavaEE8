@@ -6,7 +6,7 @@ import javax.ejb.Local;
 
 @Local
 public interface RegisterBeanLocal extends Serializable {
-    public abstract String persist(
+    String persist(
         String email, 
         String password);
 }

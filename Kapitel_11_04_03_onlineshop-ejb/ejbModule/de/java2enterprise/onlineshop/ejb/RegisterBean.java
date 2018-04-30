@@ -1,14 +1,14 @@
 package de.java2enterprise.onlineshop.ejb;
 
-import javax.ejb.Stateful;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import de.java2enterprise.onlineshop.model.Customer;
 
-@Stateful
+@Stateless
 public class RegisterBean {
-    
+
     @PersistenceContext
     private EntityManager em;
 
@@ -19,7 +19,7 @@ public class RegisterBean {
         em.persist(customer);
         return customer;
     }
-    
+
     public Customer find(Long id) {
         return em.find(Customer.class, id);
     }

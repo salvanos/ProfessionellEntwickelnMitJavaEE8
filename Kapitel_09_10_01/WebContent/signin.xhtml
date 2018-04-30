@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view locale="#{localeController.lang}">
+    <f:loadBundle
+        var="msg"
+        basename="messages" />
+    <h:head>
+        <title><h:outputText value="#{msg['title']}" /></title>
+        <meta
+            http-equiv="Content-Type"
+            content="text/html; charset=UTF-8" />
+        <h:outputStylesheet
+            library="css"
+            name="styles.css" />
+    </h:head>
+    <h:body>
+        <h:messages globalOnly="true" />
+        <ui:include src="header.xhtml" />
+        <h:form
+            id="signinForm"
+            prependId="false">
+            <h:message
+                for="signinForm"
+                showSummary="true" />
+            <h:panelGrid columns="3">
+                <f:facet name="header">
+                    <h:outputText value="#{msg['signin']}" />
+                </f:facet>
+                <h:outputLabel value="#{msg['email']}:" />
+                <h:inputText
+                    id="email"
+                    value="#{signinController.email}">
+                </h:inputText>
+                <h:message for="email" />
+                <h:outputLabel value="#{msg['password']}:" />
+                <h:inputSecret
+                    id="password"
+                    value="#{signinController.password}">
+                </h:inputSecret>
+                <h:message for="password" />
+                <h:commandButton
+                    id="register"
+                    action="#{signinController.find()}"
+                    value="#{msg['signin']}" />
+                <h:message for="signin" />
+            </h:panelGrid>
+        </h:form>
+        <ui:include src="footer.xhtml" />
+    </h:body>
+</f:view>
+</html>

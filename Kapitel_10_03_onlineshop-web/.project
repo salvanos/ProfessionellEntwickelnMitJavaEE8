@@ -3,6 +3,7 @@
 	<name>Kapitel_10_03_onlineshop-web</name>
 	<comment></comment>
 	<projects>
+		<project>Kapitel_10_03_onlineshop-ejb</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

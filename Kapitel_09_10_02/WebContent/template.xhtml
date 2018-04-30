@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view locale="#{localeController.lang}">
+    <f:loadBundle
+        var="msg"
+        basename="messages" />
+    <h:head>
+        <title><h:outputText value="#{msg['title']}" /></title>
+        <meta
+            http-equiv="Content-Type"
+            content="text/html; charset=UTF-8" />
+        <h:outputStylesheet
+            library="css"
+            name="styles.css" />
+    </h:head>
+    <h:body>
+        <h:messages globalOnly="true" />
+        <ui:insert name="header">
+            <ui:include src="header.xhtml" />
+        </ui:insert>
+        <ui:insert name="content">
+        </ui:insert>
+        <ui:insert name="footer">
+            <ui:include src="footer.xhtml" />
+        </ui:insert>
+        <ui:debug/>
+    </h:body>
+</f:view>
+</html>

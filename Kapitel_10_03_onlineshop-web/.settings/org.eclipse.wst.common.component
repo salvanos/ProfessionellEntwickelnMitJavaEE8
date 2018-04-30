@@ -2,7 +2,10 @@
     <wb-module deploy-name="Kapitel_10_03_onlineshop-web">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="Kapitel_10_03_onlineshop-ejb.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Kapitel_10_03_onlineshop-ejb/Kapitel_10_03_onlineshop-ejb">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="java-output-path" value="/Kapitel_10_03_onlineshop-web/build/classes"/>
-        <property name="context-root" value="Kapitel_10_03_onlineshop-web"/>
+        <property name="context-root" value="onlineshop-web"/>
     </wb-module>
 </project-modules>
